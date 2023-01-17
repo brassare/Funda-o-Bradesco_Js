@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="MeuFormulario" action="" method="post">
+        Valor 1: <input type="text" name="f_n1">
+        <p></p>
+        Valor 2: <input type="text" name="f_n2">
+        <p></p>
+        <input type="button" name="btn_somar" value="somar" onclick="soma()">
+        <input type="reset" name="btn_apagar" value="Apagar">
+
+        <script>
+            var js_n1;
+            var js_n2;
+            var js_soma;
+
+            function soma() {
+                js_n1 = parseInt(document.MeuFormulario.f_n1.value);
+                js_n2 = parseInt(document.MeuFormulario.f_n2.value);
+                js_soma = js_n1 + js_n2;
+
+                window.alert('Resultado da Soma = ' + js_soma.toString());
+            }
+
+        </script>
+
+    </form>
+</body>
+
+</html>
